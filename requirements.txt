@@ -1,0 +1,37 @@
+# Core ML
+torch
+torchvision
+
+# MedMNIST datasets (auto-downloads on first use)
+medmnist
+
+# Explainability
+captum
+
+# Image processing
+Pillow
+opencv-python-headless
+albumentations
+scikit-image
+
+# Data / ML utils
+numpy
+pandas
+scikit-learn
+tqdm
+
+# Visualisation
+matplotlib
+seaborn
+
+# Frontend
+streamlit
+
+# PDF report generation
+reportlab
+
+# Notebook
+ipykernel
+jupyter
+notebook
+groq

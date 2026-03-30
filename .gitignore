@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+.eggs/
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# macOS
+.DS_Store
+.AppleDouble
+
+# Training logs (verbose)
+models/train_log.txt
+
+# Dataset folders (large — download separately, see README)
+CXR_png/
+masks/
+ClinicalReadings/
+Lung Segmentation/
+
+# MedMNIST auto-download cache
+data/
+
+# Model weights — tracked via Git LFS or Hugging Face
+# Comment out the line below if you want to include weights in the repo
+# models/best_model.pth
+
+# IDEs
+.vscode/
+.idea/
+
+# Ignore models directory
+models/
+dataset/
+datasets/
