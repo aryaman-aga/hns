@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "name": "sk",
+    "email": "sparsh.kalia.ug23@nsut.ac.in",
+    "password": "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92",
+    "role": "practitioner",
+    "specialization": "",
+    "licenseId": "5454",
+    "created": "2026-04-08T20:13:31.084033"
+  },
+  {
+    "id": 2,
+    "name": "skubu",
+    "email": "sk@gmail.com",
+    "password": "47a6f0f7c64e3ad03e9df098a26152712e7caf0e5380765c242cd63ea0143718",
+    "role": "patient",
+    "specialization": "",
+    "licenseId": "",
+    "created": "2026-04-09T10:30:16.607300"
+  }
+]

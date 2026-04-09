@@ -1,0 +1,153 @@
+.scan-uploader {
+  border: 2px dashed rgba(178, 223, 219, 0.5);
+  border-radius: var(--radius-lg);
+  padding: var(--space-2xl);
+  text-align: center;
+  cursor: pointer;
+  transition: all var(--transition-normal);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  position: relative;
+  overflow: hidden;
+}
+
+.scan-uploader:hover,
+.scan-uploader.drag-over {
+  border-color: var(--accent-deeper);
+  background: rgba(178, 223, 219, 0.08);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.scan-uploader-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto var(--space-md);
+  background: rgba(178, 223, 219, 0.15);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-deeper);
+}
+
+.scan-uploader-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: var(--space-xs);
+}
+
+.scan-uploader-hint {
+  font-size: 0.85rem;
+  color: var(--text-tertiary);
+}
+
+.scan-uploader input[type="file"] {
+  display: none;
+}
+
+.scan-preview-container {
+  margin-top: var(--space-lg);
+  position: relative;
+}
+
+.scan-preview {
+  max-width: 300px;
+  max-height: 300px;
+  border-radius: var(--radius-md);
+  margin: 0 auto;
+  display: block;
+  box-shadow: var(--shadow-md);
+  border: 2px solid var(--glass-border);
+}
+
+.scan-preview-remove {
+  position: absolute;
+  top: -8px;
+  right: calc(50% - 160px);
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--danger);
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  box-shadow: var(--shadow-sm);
+}
+
+/* Task selector */
+.task-selector {
+  display: flex;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-lg);
+}
+
+.task-option {
+  flex: 1;
+  padding: 14px 16px;
+  border: 2px solid rgba(0, 0, 0, 0.06);
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  text-align: center;
+  font-family: var(--font-family);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  letter-spacing: var(--letter-spacing);
+}
+
+.task-option:hover {
+  border-color: var(--accent-dark);
+  background: rgba(178, 223, 219, 0.1);
+}
+
+.task-option.selected {
+  border-color: var(--accent-deeper);
+  background: rgba(178, 223, 219, 0.15);
+  color: var(--accent-deeper);
+  box-shadow: 0 0 0 3px rgba(178, 223, 219, 0.15);
+}
+
+.task-option-icon {
+  font-size: 1.5rem;
+  margin-bottom: var(--space-xs);
+  display: block;
+}
+
+/* XAI selector */
+.xai-selector {
+  display: flex;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-lg);
+}
+
+.xai-option {
+  flex: 1;
+  padding: 10px 12px;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  text-align: center;
+  font-family: var(--font-family);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.xai-option:hover {
+  border-color: var(--accent-dark);
+}
+
+.xai-option.selected {
+  border-color: var(--accent-deeper);
+  background: rgba(178, 223, 219, 0.12);
+  color: var(--accent-deeper);
+}

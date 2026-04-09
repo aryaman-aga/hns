@@ -1,0 +1,38 @@
+.glass-card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--glass-shadow);
+  padding: var(--space-xl);
+  transition: all var(--transition-normal);
+}
+
+.glass-card:hover {
+  background: var(--glass-bg-hover);
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-4px);
+}
+
+.glass-card-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius-md);
+  background: linear-gradient(135deg, rgba(178, 223, 219, 0.3), rgba(128, 203, 196, 0.2));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-deeper);
+  margin-bottom: var(--space-md);
+}
+
+.glass-card h3 {
+  margin-bottom: var(--space-sm);
+  font-size: 1.1rem;
+}
+
+.glass-card p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
